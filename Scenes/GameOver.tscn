@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn5frroqipcvw"]
+
+[ext_resource type="Script" uid="uid://cmyoccfxm5kbe" path="res://Scenes/game_over.gd" id="1_k52d1"]
+
+[sub_resource type="Theme" id="Theme_m5628"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 94.0
+offset_right = -1147.0
+offset_bottom = -554.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k52d1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -447.0
+offset_top = -155.0
+offset_right = 433.0
+offset_bottom = 274.0
+color = Color(0.396078, 0.439216, 0.235294, 1)
+
+[node name="GameOverLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = -114.0
+offset_top = -138.0
+offset_right = 112.0
+offset_bottom = -81.0
+theme_override_font_sizes/font_size = 30
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = -120.0
+offset_top = -55.0
+offset_right = 106.0
+offset_bottom = 2.0
+theme_override_font_sizes/font_size = 30
+text = "Score: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RetryButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 74.0
+theme = SubResource("Theme_m5628")
+text = "Retry"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = -81.0
+offset_top = 106.0
+offset_right = 95.0
+offset_bottom = 148.0
+theme = SubResource("Theme_m5628")
+text = "Quit"
+
+[node name="SaveScoreButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = -81.0
+offset_top = 212.0
+offset_right = 95.0
+offset_bottom = 254.0
+theme = SubResource("Theme_m5628")
+text = "Save Score"
+
+[node name="NameInput" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = -116.0
+offset_top = 163.0
+offset_right = 145.0
+offset_bottom = 194.0
+placeholder_text = "Enter Name"
