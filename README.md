@@ -106,7 +106,7 @@ The server runs at `https://vibhathomasgmailcom.itch.io/mushroom-chase`. Without
 ![alt text](image-2.png)
 ---
 
-## What I Learned
+## What I Learnt
 
 - Structuring a Godot 4 project with autoloaded singletons for global state
 - Building enemy AI state machines (patrol → chase → attack) in GDScript
